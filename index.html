@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Tailwind-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!--Flowbite-->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="text-2xl text-center font-bold m-4">LOOP - ARRAY HOMEWORK</h1>
+    <div>
+        <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
+        <input type="number" id="number_input"
+            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Nhập số bất kì" required />
+    </div>
+    <!--Thêm số-->
+    <button id="addNum" type="submit" onclick="addNum()"
+        class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Thêm số</button>
+    <div id="result_addNumber"></div>
+    <!--Tổng các số dương-->
+    <button id="btnTongSoDuong" type="submit" onclick="onTongSoDuong()"
+        class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Tổng số dương</button>
+    <div id="result_TongSoDuong"></div>
+    <!--Đếm số dương-->
+        <button id="btnDemSoDuong" type="submit" onclick="countSoDuong()"
+        class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Đếm số dương</button>
+    <div id="dem_soduong"></div>
+    <!--Tìm số nhỏ nhất-->
+    <button id="btnNum_min" type="submit" onclick=" minNumber()"
+        class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Tìm số nhỏ nhất</button>
+    <div id="result_minNumber"></div>
+    <!--Tìm số dương nhỏ nhất-->
+    <button id="btnSoDuong_min" type="submit" onclick="minSoDuong()"
+        class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Tìm số dương nhỏ nhất</button>
+    <div id="result_minSoDuong"></div>
+    <!--Tìm số chẳn cuối cùng. Không có chẳn, trả về -1-->
+     <button id="btnTheLast_chan" type="submit" onclick="theLastChan()"
+        class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Tìm số chẳn cuối cùng</button>
+    <div id="result_theLastChan"></div>
+    
+
+
+
+
+    <!--Flowbite-->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
