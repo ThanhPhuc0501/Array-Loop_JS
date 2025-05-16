@@ -67,12 +67,38 @@ function minSoDuong() {
             result = `Số dương nhỏ nhất là: ${min}`
         }
     }
-    document.getElementById('result_minSoDuong').innerHTML = result  
+    document.getElementById('result_minSoDuong').innerHTML = result
 }
 // Tìm số chẳn cuối cùng. Không có chẳn, trả về -1
 function theLastChan() {
+    soChan = -1; // Giá trị mặc định khi trong mảng không có số chẳn
+    for (let i = array.length; i >= 0; i--) {
+        if (array[i] % 2 === 0) {
+            soChan = array[i]
+            break;
+        }
+    }
+    document.getElementById('result_theLastChan').innerHTML = `
+    Số chẳn cuối cùng trong mảng là: ${soChan}`
+}
+function onSwapPosition() {
+    let index_1 = document.getElementById('index_1').value * 1;
+    let index_2 = document.getElementById('index_2').value * 1;
+    if (index_1 < 0 || index_2 < 0 || index_1 >= array.length || index_2 >= array.length) {
+        alert('Vui lòng nhập đúng chỉ số index')
+    } else {
+        let temp = array[index_1];
+        array[index_1] = array[index_2];
+        array[index_2] = temp;
+    }
+    document.getElementById('result_swapPosition').innerHTML = `
+    Dãy số của bạn sau khi đã hoán đổi chỉ số index là: ${array}
+    `
+}
+function fromSmallToLarge() {
 
 }
+
 
 
 
