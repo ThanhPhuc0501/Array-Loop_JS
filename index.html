@@ -14,64 +14,113 @@
 <body>
     <h1 class="text-2xl text-center font-bold m-4">LOOP - ARRAY HOMEWORK</h1>
     <div>
-        <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
+        <label for="first_name" class=" block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
         <input type="number" id="number_input"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Nhập số bất kì" required />
     </div>
     <!--Thêm số-->
-    <button id="addNum" type="submit" onclick="addNum()"
-        class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Thêm số</button>
-    <div id="result_addNumber"></div>
+    <div>
+        <button id="addNum" type="submit" onclick="addNum()"
+            class="m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Thêm
+            số</button>
+        <div class="mx-full px-4 py-4 bg-black text-white" id="result_addNumber"></div>
+    </div>
     <!--Tổng các số dương-->
-    <button id="btnTongSoDuong" type="submit" onclick="onTongSoDuong()"
-        class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Tổng số dương</button>
-    <div id="result_TongSoDuong"></div>
+    <div>
+        <h3 class="text-xl font-bold inline-block">Bài 1: Tính tổng các số dương</h3>
+        <button id="btnTongSoDuong" type="submit" onclick="onTongSoDuong()"
+            class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Tổng
+            số dương</button>
+        <div class="mx-full px-4 py-4 bg-black text-white" id="result_TongSoDuong"></div>
+    </div>
     <!--Đếm số dương-->
+    <div>
+        <h3 class="text-xl font-bold inline-block">Bài 2: Đếm các số dương trong dãy</h3>
         <button id="btnDemSoDuong" type="submit" onclick="countSoDuong()"
-        class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Đếm số dương</button>
-    <div id="dem_soduong"></div>
+            class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Đếm
+            số dương</button>
+        <div class="mx-full px-4 py-4 bg-black text-white" id="dem_soduong"></div>
+    </div>
     <!--Tìm số nhỏ nhất-->
-    <button id="btnNum_min" type="submit" onclick=" minNumber()"
-        class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Tìm số nhỏ nhất</button>
-    <div id="result_minNumber"></div>
+    <div>
+        <h3 class="text-xl font-bold inline-block">Bài 3: Tìm số nhỏ nhất trong dãy</h3>
+        <button id="btnNum_min" type="submit" onclick=" minNumber()"
+            class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Tìm
+            số nhỏ nhất</button>
+        <div class="mx-full px-4 py-4 bg-black text-white" id="result_minNumber"></div>
+    </div>
     <!--Tìm số dương nhỏ nhất-->
-    <button id="btnSoDuong_min" type="submit" onclick="minSoDuong()"
-        class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Tìm số dương nhỏ nhất</button>
-    <div id="result_minSoDuong"></div>
+    <div>
+        <h3 class="text-xl font-bold inline-block">Bài 4: Tìm số dương nhỏ nhất trong dãy</h3>
+        <button id="btnSoDuong_min" type="submit" onclick="minSoDuong()"
+            class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Tìm
+            số dương nhỏ nhất</button>
+        <div class="mx-full px-4 py-4 bg-black text-white" id="result_minSoDuong"></div>
+    </div>
     <!--Tìm số chẳn cuối cùng. Không có chẳn, trả về -1-->
-     <button id="btnTheLast_chan" type="submit" onclick="theLastChan()"
-        class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Tìm số chẳn cuối cùng</button>
-    <div id="result_theLastChan"></div>
+    <div>
+        <h3 class="text-xl font-bold inline-block">Bài 5: Tìm số chẳn cuối cùng trong dãy</h3>
+        <button id="btnTheLast_chan" type="submit" onclick="theLastChan()"
+            class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Tìm
+            số chẳn cuối cùng</button>
+        <div class="mx-full px-4 py-4 bg-black text-white" id="result_theLastChan"></div>
+    </div>
     <!--Đổi chỗ 2 giá trị bất kì trong mảng-->
-    <h3>Hoán đổi vị trí</h3>
-     <div>
-        <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
-        <input type="number" id="index_1"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Nhập index 1" required />
+    <div>
+        <h3 class="text-xl font-bold  inline-block">Bài 6: Đổi chỗ giá trị 2 index bất kì trong dãy</h3>
+        
+        <div class="inline-block">
+            <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First
+                name</label>
+            <input type="number" id="index_1"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Nhập index 1" required />
+        </div>
+        <div class="inline-block">
+            <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First
+                name</label>
+            <input type="number" id="index_2"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Nhập index 2" required />
+        </div>
+        <button id="btnSwapPosition" type="submit" onclick="onSwapPosition()"
+            class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Hoán
+            đổi vị trí</button>
+        <div class="mx-full px-4 py-4 bg-black text-white" id="result_swapPosition"></div>
     </div>
-     <div>
-        <label for="first_name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">First name</label>
-        <input type="number" id="index_2"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="Nhập index 2" required />
-    </div>
-    <button id="btnSwapPosition" type="submit" onclick="onSwapPosition()"
-        class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Hoán đổi vị trí</button>
-    <div id="result_swapPosition"></div>
-    
     <!--Sắp xếp mảng theo thứ tự tăng dần-->
-    <button id="btnSmallToLarge" type="submit" onclick="fromSmallToLarge()"
-        class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sắp xếp tăng dần</button>
-    <div id="result_fromSmallToLarge"></div>
-    
-
-    
-
-
-
-
+    <div>
+        <h3 class="text-xl font-bold inline-block">Bài 7: Sắp xếp các giá trị trong dãy theo thứ tăng dần</h3>
+        <button id="btnSmallToLarge" type="submit" onclick="fromSmallToLarge()"
+            class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sắp
+            xếp tăng dần</button>
+        <div class="mx-full px-4 py-4 bg-black text-white" id="result_fromSmallToLarge"></div>
+    </div>
+    <!--Tìm số nguyên tố đầu tiên-->
+    <div>
+        <h3 class="text-xl font-bold inline-block">Bài 8: Tìm số nguyên tố đầu tiên trong dãy</h3>
+        <button id="btn_primeNumber" type="submit" onclick="theFirstPrimeNumber()"
+            class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Số
+            nguyên tố đầu tiên</button>
+        <div class="mx-full px-4 py-4 bg-black text-white" id="result_primeNumber"></div>
+    </div>
+    <!--Đếm số nguyên-->
+    <div>
+        <h3 class="text-xl font-bold inline-block">Bài 9: Đếm các số nguyên có trong dãy</h3>
+        <button id="btn_countInteger" type="submit" onclick="countInteger()"
+            class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Đếm
+            số nguyên</button>
+        <div class="mx-full px-4 py-4 bg-black text-white" id="result_countInteger"></div>
+    </div>
+    <!--So sánh số lượng số âm và số dương-->
+    <div>
+        <h3 class="text-xl font-bold inline-block">Bài 10: So sánh các số dương và số âm</h3>
+        <button id="btn_compareNumber" type="submit" onclick=" compareNumber()"
+            class=" m-2.5 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">So
+            sánh số âm và số dương</button>
+        <div class="mx-full mb-4 px-4 py-4 bg-black text-white" id="result_compareNumber"></div>
+    </div>
     <!--Flowbite-->
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script src="./main.js"></script>
